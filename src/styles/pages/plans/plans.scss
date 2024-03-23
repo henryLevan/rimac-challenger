@@ -1,0 +1,80 @@
+.plansPage {
+    overflow: hidden;
+    padding-bottom: 50px;
+    &__selected-card {
+        max-width: 544px;
+        margin: auto;
+        margin-top: 60px;
+        @include mobile() {
+            margin-top: 20px;
+        }
+        .main-title {
+            font-family: $BR_Sonoma_bold;
+            font-size: 40px;
+            line-height: 48px;
+            color:$balck-color-04;
+            text-align: center;
+            @include mobile() {
+                font-size: 28px;
+                text-align: start;
+                line-height: 36px;
+            }
+        }
+        .main-description {
+            font-family: $BR_Sonoma_regular;
+            font-size: 16px;
+            text-align: center;
+            line-height: 28px;
+            @include mobile() {
+                text-align: start;
+            }
+        }
+        &--selected-cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 22px;
+            margin: 30px 0;
+            @include mobile() {
+                grid-template-columns: initial;
+                grid-template-rows: 1fr 1fr;
+                row-gap: 22px;
+            }
+        }
+    }
+
+    &__detail-cards {
+        // column-gap: 30px;
+        // max-width: 928px;
+        margin: auto;
+        &--arrows{
+            display: none;
+            align-items: center;
+            justify-content: center;
+            font-family: $BR_Sonoma;
+            font-size: 14px;
+            margin-top: 30px;
+            @include mobile() {
+                display: flex;
+            }
+            span {
+                margin: 0 10px;
+            }
+            .active {
+                path {
+                    fill: $purple-dark !important;
+                }
+                circle {
+                    stroke: $purple-dark !important;
+                }
+            }
+            .icon-arrow-left {
+                cursor: pointer;
+            }
+            .icon-arrow-right {
+                transform: rotate(180deg);
+                margin-top: -5px;
+                cursor: pointer;
+            }
+        }
+    }
+}

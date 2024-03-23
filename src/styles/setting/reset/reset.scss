@@ -1,0 +1,97 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+    color: initial;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+// RESET INPUT OF LIBRARY
+
+.css-10botns-MuiInputBase-input-MuiFilledInput-input, .css-hwkq3c-MuiInputBase-root-MuiFilledInput-root {
+    background-color: transparent !important;
+}
+
+.css-hwkq3c-MuiInputBase-root-MuiFilledInput-root::before,
+.css-hwkq3c-MuiInputBase-root-MuiFilledInput-root::after {
+    border-bottom: none !important;
+}
+
+.css-hwkq3c-MuiInputBase-root-MuiFilledInput-root:hover {
+    background-color: transparent !important;
+}
+
+.css-o943dk-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+    color: initial !important;
+}
+
+.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+    border-color: transparent !important;
+}
+
+.MuiFormControlLabel-label	{
+    color: $black-color-03 !important;
+    font-size: 12px !important;
+    font-family: $BR_Sonoma !important;
+}
+
+.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.Mui-checked {
+    color: $black-color-03 !important;
+}
+
+.MuiButton-containedSizeLarge{
+    background-color: $black-color !important;
+    font-family: $BR_Sonoma_bold !important;
+    font-size: 20px;
+    padding:  20px 40px 20px 40px !important;
+    border-radius: 40px !important;
+    width: 100%;
+}
+
+.MuiButton-containedSizeMedium{
+    background-color: $red-02 !important;
+    font-family: $BR_Sonoma_bold !important;
+    font-size: 18px;
+    padding:  14px 32px 14px 32px !important;
+    border-radius: 32px !important;
+    width: 100%;
+    text-transform: initial !important;
+}
+
+.MuiFormHelperText-root {
+    color: $red-01 !important;
+    font-size: 10px !important;
+}

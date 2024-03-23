@@ -1,0 +1,15 @@
+.back-button {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    cursor: pointer;
+    @include mobile() {
+        display: none;
+    }
+    span {
+        color: $purple-dark;
+        font-size: 18px;
+        margin-left: 10px;
+        font-family: $BR_Sonoma_bold;
+    }
+}

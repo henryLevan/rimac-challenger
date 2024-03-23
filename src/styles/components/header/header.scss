@@ -1,0 +1,27 @@
+.header {
+    &__content {
+        font-family: BR_Sonoma_bold;
+        color: $black-color;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &--information{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            p {
+                font-size: 12px;
+                margin-right: 15px;
+                @include mobile() {
+                    display: none;
+                }
+            }
+            img {
+                margin-right: 10px;
+            }
+            a {
+                font-size: 18px;
+            }
+        }
+    }
+}

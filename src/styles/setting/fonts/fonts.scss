@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'BR_Sonoma';
+    src: url('../../../../public/fonts/BRSonoma/BRSonoma-Light.otf') format('opentype')
+  }
+
+@font-face {
+  font-family: 'BR_Sonoma_regular';
+  src: url('../../../../public/fonts/BRSonoma/BRSonoma-Regular.otf') format('opentype')
+} 
+
+@font-face {
+    font-family: 'BR_Sonoma_bold';
+    src: url('../../../../public/fonts/BRSonoma/BRSonoma-Bold.otf') format('opentype')
+}  
+
+$BR_Sonoma: BR_Sonoma;
+$BR_Sonoma_regular: BR_Sonoma_regular;
+$BR_Sonoma_bold: BR_Sonoma_bold;

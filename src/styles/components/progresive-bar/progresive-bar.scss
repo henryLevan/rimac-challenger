@@ -1,0 +1,100 @@
+.progresive-bar {
+    background-color: $purple-light !important;
+    @include mobile() {
+        background-color: initial !important;
+    }
+    &__content {
+        ul {
+            display: flex;
+            justify-content: center;
+            font-family: BR_Sonoma_regular;
+            @include mobile() {
+                display: none;
+            }
+            li {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                span {
+                    width: 24px;
+                    height: 24px;
+                    border: 1px solid $purple-disabled;
+                    color: $purple-disabled;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 12px;
+                    border-radius: 100%;
+                    margin-right: 12px;
+                    margin-left: 50px;
+                }
+                label {
+                    color: $purple-disabled;
+                    font-size: 16px;
+                }
+                &::before{
+                    content: "";
+                    border: none;
+                    border-top: 2px dashed $purple-disabled;
+                    position: absolute;
+                    width: 32px;
+                    height: 1px;
+                    left: 10px;
+                }
+
+                &:first-child {
+                    margin-left: 0px;
+                    &::before{
+                        display: none;
+                    }
+                }
+            }
+            .active {
+                span {
+                    border: initial;
+                    background-color: $purple-dark;
+                    color: $white-01;
+                }
+                label {
+                    color: $balck-color-04;
+                    font-size: 16px;
+                    font-family: $BR_Sonoma_bold;
+                }
+            }
+        }
+        .version-mobile {
+            display: none;
+            grid-template-columns: 21px 59px 100%;
+            grid-column-gap: 16px;
+            align-items: center;
+            @include mobile() {
+                display: grid;
+            }
+            span {
+                font-size: 10px;
+                color: $balck-color-04;
+                font-family: $BR_Sonoma_bold;
+            }
+            &__progress-bar {
+                background-color: $purple-light-02;
+                height: 6px;
+                width: calc(100% - 113px);
+                position: relative;
+                .dowloaded {
+                    position: absolute;
+                    left: 0;
+                    height: 6px;
+                    width: 5%;
+                    background-color: $purple-dark;
+                }
+            }
+        }
+    }
+    .progressive-bar-mobile {
+        display: none;
+        @include mobile() {
+            display: block;
+        }
+    }
+}

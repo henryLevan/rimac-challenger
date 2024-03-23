@@ -1,0 +1,19 @@
+.footer {
+    background-color: $black-color;
+    &__content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include mobile() {
+            flex-direction: column;
+        }
+        p{
+            color: $gray-01;
+            font-size: 14px;
+            font-family: BR_Sonoma;
+            @include mobile() {
+                margin-top: 30px;
+            }
+        }
+    }
+}

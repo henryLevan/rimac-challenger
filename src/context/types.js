@@ -1,0 +1,6 @@
+export const GET_USER = 'GET_INFO_USER'
+export const GET_PLANS = 'GET_PLANS'
+export const SAVE_SELECTED_TYPE_PLAN = 'SAVE_SELECTED_TYPE_PLAN'
+export const SAVE_PLAN_BY_AGE = 'SAVE_PLAN_BY_AGE'
+export const SAVE_PLAN = 'SAVE_PLAN'
+export const UPDATE_STEP = 'UPDATE_STEP'

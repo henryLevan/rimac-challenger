@@ -1,0 +1,57 @@
+.selected-card {
+    position: relative;
+    border-radius: 24px;
+    box-shadow: -2px -1px 22px 0px rgb(191 190 225 / 75%);
+    -webkit-box-shadow: -2px -1px 22px 0px rgb(191 190 225 / 75%);
+    -moz-box-shadow: -2px -1px 22px 0px rgb(191 190 225 / 75%);
+    padding: 40px 24px 40px 24px;
+    background-color: $white-01;
+    cursor: pointer;
+    &__radius {
+        position: absolute;
+        right: 24px;
+        top: 24px;
+        .inactive {
+            width: 24px;
+            height: 24px;
+            border: 1px solid $gray-03;
+            border-radius: 100%;
+        }
+    }
+    &__icon-top {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        @include mobile() {
+            flex-direction: row;
+            align-items: center;
+        }
+        img {
+            @include mobile() {
+                width: 44px;
+                margin-bottom: 15px;
+            }
+        }
+        span {
+            font-family: $BR_Sonoma_bold;
+            color: $balck-color-04;
+            font-size: 20px;
+            line-height: 28px;
+            margin: 10px 0;
+            @include mobile() {
+                margin-left: 10PX;
+            }
+        }
+    }
+    &__icon-down {
+        .description {
+            font-size: 12px;
+            text-align: start;
+            line-height: 20px;
+        }
+    }
+}
+
+.selected-card-active {
+    border: 3px solid $black-color;
+}
