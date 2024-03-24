@@ -70,8 +70,8 @@ const Form = ({ handleReadyForm }) => {
                                         {...register("documentNumber", { required: {
                                             value: true,
                                             message: ERRORS_MESSAGES.errorDni
-                                        }, minLength: { value: 8, message: "Está incompleto el número de su documento" },
-                                        maxLength: { value: 8, message: "Está incompleto el número de su documento" },
+                                        }, minLength: { value: 8, message: "Digite el número de su documento correctamente" },
+                                        maxLength: { value: 8, message: "Digite el número de su documento correctamente" },
                                         validate: isNumber })}
                                         />
                                 </FormControl>
@@ -89,8 +89,8 @@ const Form = ({ handleReadyForm }) => {
                                         {...register("cellPhoneNumber",  { required: {
                                             value: true,
                                             message: ERRORS_MESSAGES.cellPhoneNumber
-                                        }, minLength: { value: 8, message: "Está incompleto su número de celular" },
-                                        maxLength: { value: 8, message: "Está incompleto su número de celular" },
+                                        }, minLength: { value: 9, message: "Digite el número de su celular correctamente" },
+                                        maxLength: { value: 9, message: "Digite el número de su celular correctamente" },
                                         validate: isNumber })}
                                         />
                                 </FormControl>

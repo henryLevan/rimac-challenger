@@ -119,15 +119,16 @@ const Plans = () => {
             </div>
         </div>
         <div className='plansPage__detail-cards'>
-            { plansByAge.length > 0 && <Slider ref={slider => {
+            { plansByAge.length > 0 && <>
+                <Slider ref={slider => {
           sliderRef = slider;
         }} {...settings} >
                 {
                     plansByAge.map((dataItem, key) => 
                     <div key={key}><DetailCard handleSelectedPlan={(data) => handleSavePlan(data)} dataItem={dataItem}></DetailCard></div>) 
                 }
-            </Slider>}
-            <div className='plansPage__detail-cards--arrows'>
+            </Slider>
+                <div className='plansPage__detail-cards--arrows'>
                 <div className={ slideIndex > 0 ? 'icon-arrow-left active' : 'icon-arrow-left'} onClick={() => prevSlider(lengthSlider, updateCount )}>
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_8348_236)">
@@ -156,6 +157,7 @@ const Plans = () => {
                     </svg>
                 </div>
             </div>
+            </>}
         </div>
         </div>
     </>
